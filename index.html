@@ -43,6 +43,57 @@
     </style>
 </head>
 <body>
+    <header class="container mx-auto py-5">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 space-y-2">
+                        <div class="tooltip" data-tip="Home">
+                            <button class="btn rounded-full"><i class="fa-solid fa-house"></i></button>
+                          </div>
+                        <div class="tooltip" data-tip="Write Post">
+                            <button class="btn rounded-full"><i class="fa-solid fa-pen"></i></button>
+                          </div>
+                        <div class="tooltip" data-tip="Users">
+                            <button class="btn rounded-full"><i class="fa-regular fa-user"></i></button>
+                          </div>
+                        <div class="tooltip" data-tip="Popular Posts">
+                            <button class="btn rounded-full"><i class="fa-regular fa-flag"></i></button>
+                          </div>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost text-4xl font-extrabold text-[#12132D] font-mulish">ReTro</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                
+            </div>
+            <div class="navbar-end">
+                <ul class="menu menu-horizontal px-1 space-x-2 hidden lg:flex">
+                    <div class="tooltip" data-tip="Home">
+                        <button class="btn rounded-full"><i class="fa-solid fa-house"></i></button>
+                      </div>
+                    <div class="tooltip" data-tip="Write Post">
+                        <button class="btn rounded-full"><i class="fa-solid fa-pen"></i></button>
+                      </div>
+                    <div class="tooltip" data-tip="Users">
+                        <button class="btn rounded-full"><i class="fa-regular fa-user"></i></button>
+                      </div>
+                    <div class="tooltip" data-tip="Popular Posts">
+                        <button class="btn rounded-full"><i class="fa-regular fa-flag"></i></button>
+                      </div>
+                </ul>
+                <a class="btn bg-[#797DFC] rounded-full text-white px-10">Sign In</a>
+            </div>
+        </div>
+    </header>
     <script src="/js/forum.js"></script>
 </body>
 </html>
