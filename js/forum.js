@@ -86,3 +86,21 @@ const latestPosts = async () => {
     });
   
   };
+
+
+  const handleSearch = async () => {
+    document.getElementById('loading-spinner').style.display = "block";
+    const value = document.getElementById('search-box').value;
+    if (value) {
+      loadPosts(value)
+    }
+    else {
+      alert("please enter a valid category");
+    }
+  }
+  
+  
+  
+  
+  latestPosts();
+  loadPosts("");
